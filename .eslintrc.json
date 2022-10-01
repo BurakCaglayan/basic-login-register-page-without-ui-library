@@ -8,9 +8,7 @@
     "extends": [
         "airbnb",
         "plugin:react/recommended",
-        "plugin:prettier/recommended",
-        "plugin:jest-dom/recommended",
-        "plugin:testing-library/react"
+        "plugin:prettier/recommended"
     ],
     "overrides": [
     ],

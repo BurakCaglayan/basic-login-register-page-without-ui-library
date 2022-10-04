@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormInput from "../UI/formInput/FormInput";
+import SubmitButton from "../UI/buttons/SubmitButton";
 
 const Login = () => {
   const [form, setForm] = useState({
@@ -18,6 +19,10 @@ const Login = () => {
     setForm(updatedForm);
   };
 
+  const onLoginClick = () => {
+    console.log("form: ", form);
+  };
+
   return (
     <form className="login">
       <FormInput
@@ -33,6 +38,11 @@ const Login = () => {
         name="password"
         value={form.password}
         onChange={handleFormChange}
+      />
+      <SubmitButton
+        className="submit-btn"
+        onClick={onLoginClick}
+        text="LOGIN"
       />
     </form>
   );

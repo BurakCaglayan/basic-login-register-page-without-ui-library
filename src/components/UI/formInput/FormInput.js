@@ -1,22 +1,15 @@
-import { useState } from "react";
-
-function FormInput({ label, type = "text", index }) {
-  const [value, setValue] = useState("");
-  const onChange = (event) => {
-    setValue(event.target.value);
-  };
-
+const FormInput = ({ name, type = "text", placeholder, value, onChange }) => {
   return (
-    <div className="FormInput">
-      <label htmlFor={`label_${index}`}>{label}</label>
+    <div className="formInput">
       <input
-        id={`inpıt_${index}`}
+        placeholder={placeholder}
         type={type}
+        name={name}
         value={value}
         onChange={onChange}
       />
     </div>
   );
-}
+};
 
 export default FormInput;

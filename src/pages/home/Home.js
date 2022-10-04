@@ -1,9 +1,16 @@
+import { useState } from "react";
 import Card from "../../components/UI/card/Card";
+import Tabs from "../../components/UI/tabs/Tabs";
 
 const Home = () => {
+  const [selectedView, setSelectedView] = useState(1);
+
   return (
     <div className="home">
-      <Card />
+      <Card
+        header={<Tabs setSelectedView={setSelectedView} />}
+        content={selectedView === 1 ? "Login" : "Register"}
+      />
     </div>
   );
 };

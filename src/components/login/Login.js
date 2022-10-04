@@ -3,7 +3,6 @@ import FormInput from "../UI/formInput/FormInput";
 
 const Login = () => {
   const [form, setForm] = useState({
-    name: "",
     emailAddress: "",
     password: "",
   });

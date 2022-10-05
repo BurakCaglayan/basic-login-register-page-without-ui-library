@@ -1,6 +1,64 @@
-.formInput{
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.form__group {
   display: flex;
-  & input {
-    flex: 1;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #eaeaeb;
+    outline: 0;
+    font-size: 14px;
+    color: #eaeaeb;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ .form__label {
+      font-size: 14px;
+      cursor: text;
+      top: 20px;
+      color: #eaeaeb;
+    }
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    color: #eaeaeb;
+  }
+
+  input:focus {
+    ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 12px;
+      color: #8ca632;
+    }
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-bottom: 2px solid #8ca632;
+  }
+  /* reset input */
+  input {
+    &:required,
+    &:invalid {
+      box-shadow: none;
+    }
   }
 }

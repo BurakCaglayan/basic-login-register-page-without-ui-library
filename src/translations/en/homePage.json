@@ -1,0 +1,9 @@
+{
+  "login": "Login",
+  "signUp": "Sign Up",
+  "form": {
+    "nameSurname": "Name Surname",
+    "emailAddress": "E-Mail Address",
+    "password": "Password"
+  }
+}

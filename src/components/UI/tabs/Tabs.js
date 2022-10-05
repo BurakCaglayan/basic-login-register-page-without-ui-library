@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Tabs = ({ setSelectedView, selectedView }) => {
+  const { t } = useTranslation();
   return (
     <div className="tabs">
       <button
@@ -8,7 +11,7 @@ const Tabs = ({ setSelectedView, selectedView }) => {
         }`}
         onClick={() => setSelectedView(1)}
       >
-        Login
+        {t("login")}
       </button>
       <button
         type="button"
@@ -17,7 +20,7 @@ const Tabs = ({ setSelectedView, selectedView }) => {
         }`}
         onClick={() => setSelectedView(2)}
       >
-        Register
+        {t("signUp")}
       </button>
     </div>
   );

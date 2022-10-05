@@ -1,0 +1,9 @@
+{
+  "login": "Giriş Yap",
+  "signUp": "Üye Ol",
+  "form": {
+    "nameSurname": "Adınız Soyadınız",
+    "emailAddress": "E-Posta Adresiniz",
+    "password": "Parolanız"
+  }
+}

@@ -48,7 +48,7 @@ const Register = () => {
         onChange={handleFormChange}
       />
       <SubmitButton
-        className="submit-btn"
+        className="register__submit-button mt-5"
         onClick={onRegisterClick}
         text="REGISTER"
       />

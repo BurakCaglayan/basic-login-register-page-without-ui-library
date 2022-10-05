@@ -1,1 +1,23 @@
+.submit-button {
+  color: #fdfeff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 0;
+  cursor: pointer;
+}
 
+.login__submit-button {
+  background: #8ca632;
+  &:hover {
+    background: #8da632d5;
+  }
+}
+
+.register__submit-button {
+  background: #e84362;
+  &:hover {
+    background: #e84361d5;
+  }
+}

@@ -40,7 +40,7 @@ const Login = () => {
         onChange={handleFormChange}
       />
       <SubmitButton
-        className="submit-btn"
+        className="login__submit-button mt-5"
         onClick={onLoginClick}
         text="LOGIN"
       />

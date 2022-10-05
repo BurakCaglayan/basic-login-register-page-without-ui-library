@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormInput from "../UI/formInput/FormInput";
+import SubmitButton from "../UI/buttons/SubmitButton";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -17,6 +18,10 @@ const Register = () => {
     };
 
     setForm(updatedForm);
+  };
+
+  const onRegisterClick = () => {
+    console.log("form: ", form);
   };
 
   return (
@@ -41,6 +46,11 @@ const Register = () => {
         name="password"
         value={form.password}
         onChange={handleFormChange}
+      />
+      <SubmitButton
+        className="submit-btn"
+        onClick={onRegisterClick}
+        text="REGISTER"
       />
     </form>
   );

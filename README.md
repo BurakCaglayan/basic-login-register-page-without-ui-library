@@ -2,8 +2,8 @@
 
 #### Screenshot
 
-[![ToDo App With Redux][login-screenshot]]
-[![ToDo App With Redux][register-screenshot]]
+![ToDo App With Redux][login-screenshot]
+![ToDo App With Redux][register-screenshot]
 #### Description
 
 Basic Login/Register app, is a simple responsive application developed using React, React Hooks.
@@ -18,8 +18,8 @@ The major frameworks used when built the project:
 - [Prettier](https://prettier.io/)
 - [i18n](https://react.i18next.com/)
 - [Scss](https://sass-lang.com/)
-- [Atomic Design principles (Not exactly. But it has been tried)]
-- [SASS 7+1 folder pattern (Has been tried)]
+- Atomic Design principles (Not exactly. But it has been tried)
+- SASS 7+1 folder pattern (Has been tried)
 
 ## Getting Started
 

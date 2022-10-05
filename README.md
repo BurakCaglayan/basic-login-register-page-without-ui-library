@@ -34,7 +34,7 @@ This project is currently not dependent on any back-end, database or prerequisit
 1. Clone the repo
 
    ```sh
-   will add git repo url
+   git clone https://github.com/BurakCaglayan/basic-login-register-page-without-ui-library.git
    ```
 
 2. Install NPM packages
@@ -44,7 +44,7 @@ This project is currently not dependent on any back-end, database or prerequisit
 3. Start Project
 
    ```JS
-   npm start;
+   npm start
    ```
 
 ## Usage

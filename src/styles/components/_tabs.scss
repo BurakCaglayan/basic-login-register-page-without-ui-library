@@ -9,10 +9,11 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid #fdfefd;
-  padding: 10px 0;
+  padding: 5px 0 10px 0;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  transition: color 0.2s;
   &:active {
     opacity: 0.9;
   }
@@ -32,10 +33,10 @@
 
 .tabs__button__login-active {
   color: #8ca632;
-  border-bottom: 2px solid #8ca632;
+  border-bottom: 3px solid #8ca632;
 }
 
 .tabs__button__register-active {
   color: #e84362;
-  border-bottom: 2px solid #e84362;
+  border-bottom: 3px solid #e84362;
 }

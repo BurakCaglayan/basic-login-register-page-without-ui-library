@@ -3,6 +3,39 @@
   flex-direction: row;
 }
 
-.tabs__btn {
+.tabs__button {
   flex: 1;
+  color: #696c70;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fdfefd;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  &:active {
+    opacity: 0.9;
+  }
+  &__login {
+    &:hover {
+      color: #8da632d5;
+      border-bottom: 1px solid #8da632d5;
+    }
+  }
+  &__register {
+    &:hover {
+      color: #e84361d5;
+      border-bottom: 1px solid #e84361d5;
+    }
+  }
+}
+
+.tabs__button__login-active {
+  color: #8ca632;
+  border-bottom: 2px solid #8ca632;
+}
+
+.tabs__button__register-active {
+  color: #e84362;
+  border-bottom: 2px solid #e84362;
 }

@@ -13,11 +13,17 @@
   &:hover {
     background: #8da632d5;
   }
+  &:active{
+    opacity: 0.9;
+  }
 }
 
 .register__submit-button {
   background: #e84362;
   &:hover {
     background: #e84361d5;
+  }
+  &:active{
+    opacity: 0.9;
   }
 }

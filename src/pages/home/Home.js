@@ -10,7 +10,9 @@ const Home = () => {
   return (
     <div className="home">
       <Card
-        header={<Tabs setSelectedView={setSelectedView} />}
+        header={
+          <Tabs setSelectedView={setSelectedView} selectedView={selectedView} />
+        }
         content={selectedView === 1 ? <Login /> : <Register />}
       />
     </div>
